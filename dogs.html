@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en-US" class="has-lab-nav-bottom lab-theme-light">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/styles/site.css">
+    <!--See demo at http://mbrownca.com/work/asana/dogs.html-->
+    <!--Github at https://github.com/mbrownca/dogs-->
+	<style>
+		* {
+		box-sizing: inherit;
+	}
+
+	.container {
+		padding: 0;
+		border: 0;
+		margin:0 auto 0 auto;
+		max-width: 1080px;
+	}
+ 
+	.tile {
+		column-gap: 30px;
+		column-count: 3;
+		column-fill: initial;
+	}
+
+	.tile img {
+		margin-bottom: 30px;
+		display: inline-block;
+		box-shadow: 0 11px 12px 0 rgba(36, 50, 66, .12);
+		border-radius: 4px;
+		max-width: 100%;
+	}
+
+	.tile img:hover {
+		box-shadow: 0 30px 30px 0 rgba(36, 50, 66, .5);
+		filter: brightness(80%);
+		-webkit-transition: all .3s ease-in-out;
+		-moz-transition: all .3s ease-in-out;
+		transition: all .3s ease-in-out;
+		cursor: pointer;
+	}
+
+	.overlay {
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba(0, 0, 0, 0.8);
+		z-index: 99990;
+		opacity: 1;
+		-webkit-transition: opacity .5s ease-in;
+		-moz-transition: opacity .5s ease-in;
+		transition: opacity .5s ease-in;
+	}
+
+	.overlay img {
+		position: relative;
+		max-width: 600px;
+		width: 100%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.close {
+		position: fixed;
+		width: 55px;
+		height: 50px;
+		z-index: 99999;
+		top: 10px;
+		right: 10px;
+		color: white;
+		font-size: 100px;
+		line-height: 50px;
+		cursor: pointer;
+	}
+	@media only screen and (max-width: 1080px) {
+		.tile {
+			padding:0 20px 0 20px;
+		}
+	}
+	
+	@media only screen and (max-width: 1020px) {
+		.tile {
+			column-count: 2;
+		}
+	}
+
+	@media only screen and (max-width: 600px) {
+		.tile {
+			column-count: 1;
+		}
+	</style>
+</head>
+<body>
+
+<div class="container">
+   <div id="header"></div>
+   <div class="tile" id="dog-list" ></div>
+   <div id="dog-overlay" style="opacity:0;"></div>
+</div>
+<div style="display:none;" class="close">&#215;</div>
+<div id="footer"></div>
+
+<script src="assets/data/dogscripts.js"></script> 
+
+</body>
+</html>
