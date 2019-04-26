@@ -9,7 +9,7 @@ The responsive web page uses only vanilla javascript, HTML, and CSS.
 Though the test zip folder didn't seem to have a sketch or PSD file in it, (so I wasn't sure how the final page should look), the code uses the provided header and footer snippets as well as the style sheet. 
 
 ### Usage ###
-Download the library and include [dogsscript.js](assets/scripts/dogscript.js) and [site.css](assets/style/site.css) in your HTML.
+Download the library and include [dogsscript.js](https://github.com/mbrownca/asana/blob/master/assets/data/dogscripts.js) and [site.css](https://github.com/mbrownca/asana/blob/master/assets/styles/site.css) in your HTML.
 
 The script fetches each image and source URL from the JSON file and appends them to a div.
 ```html
