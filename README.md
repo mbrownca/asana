@@ -13,7 +13,7 @@ Though the test zip folder didn't seem to have a sketch or PSD file in it, (so I
 ### Usage ###
 Download the library and include [dogsscript.js](https://github.com/mbrownca/asana/blob/master/assets/data/dogscripts.js) and [site.css](https://github.com/mbrownca/asana/blob/master/assets/styles/site.css) in your HTML.
 
-The script fetches each image and source URL from the JSON file and appends them to a div.
+The script fetches each image and source URL from the JSON file and appends them to a div. View it on localhost or hosting in order to fetch the json.
 ```html
 fetch('assets/data/dogs.json')
 	.then(response => {
